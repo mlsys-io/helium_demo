@@ -38,11 +38,14 @@ Helium is a workflow-aware serving framework for agentic LLM applications. It mo
 
 ## Installation
 
-1. Clone the repository:
+1. Download the repository:
 
    ```bash
-   git clone https://github.com/mlsys-io/helium_demo
+   mkdir helium_demo
    cd helium_demo
+   wget -O helium_demo.zip https://anonymous.4open.science/api/repo/sxzFDjxv14Cz/zip
+   unzip helium_demo.zip
+   rm helium_demo.zip
    ```
 
 2. Create and activate a virtual environment. Make sure you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed.

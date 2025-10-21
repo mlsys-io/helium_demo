@@ -63,7 +63,7 @@ class EngineManager:
         self.models[model.model_name] = model
         self._models_ref_counter[model.model_name] = 1
 
-        # NOTE(noppanat): Also use tokenizer for "text" model for routing
+        # NOTE: Also use tokenizer for "text" model for routing
         self.tokenizers_wrapper.register_tokenizer(model.tokenizer_name)
 
         logger.debug(f"Model {model.model_name} registered.")
