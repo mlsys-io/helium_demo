@@ -1,0 +1,27 @@
+system_prompt: You are a helpful assistant.
+
+first_prompt_fmt: |
+  You are composing an initial, self-contained synthesis of user reviews for product research. The input is a JSON array of review objects with fields {{title, rating, text, helpful_vote}}. Read the chunk and produce a single paragraph that:
+  * Characterizes overall sentiment and intensity (e.g., clearly positive, mixed, or negative).
+  * Highlight the most recurrent themes (usability, quality/reliability, performance, support, pricing, feature requests), separating praise from pain points.
+  * Weighs evidence by helpful_vote and rating (give greater weight to higher helpful_vote; temper conclusions based on a single outlier).
+  * Uses qualitative prevalence labels only—high / medium / low—rather than counts or computed averages.
+  * Notes contradictions or segmentation (e.g., beginners vs. power users) when present.
+  * Avoids speculation beyond the text; if a review appears truncated, do not infer missing content.
+
+  Chunk:
+  {}
+
+subsequent_prompt_fmt: |
+  You are maintaining a running synthesis S of user reviews. Given the previous summary S_{{t-1}} and the next JSON chunk, rewrite S_{{t-1}} into an updated single paragraph that:
+  * Integrates new evidence, consolidating themes and keeping terminology consistent.
+  * Adjusts the assessment of overall sentiment and theme prevalence (use only high / medium / low) based on the added reviews, weighting by helpful_vote and rating without letting isolated outliers dominate.
+  * Introduces genuinely new themes (including feature requests) and removes redundancy; if new evidence contradicts earlier claims, reconcile it and reflect the clarified view.
+  * Distinguishes stable signals from tentative or low-support observations.
+  * Avoids quoting reviews verbatim and avoids numeric computations or counts.
+
+  Previous summary (S_{{t-1}}):
+  {}
+
+  New chunk:
+  {}
