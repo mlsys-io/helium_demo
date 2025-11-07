@@ -48,14 +48,7 @@ Helium is a workflow-aware serving framework for agentic LLM applications. It mo
    rm helium_demo.zip
    ```
 
-2. Create and activate a virtual environment. Make sure you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed.
-
-   ```bash
-   uv venv
-   source .venv/bin/activate
-   ```
-
-3. Install all the dependencies:
+2. Install all the dependencies with the following command. Make sure you have [uv](https://docs.astral.sh/uv/getting-started/installation/) installed.
 
    ```bash
    bash scripts/install_all.sh
