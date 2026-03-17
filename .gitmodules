@@ -1,0 +1,16 @@
+[submodule "src/vllm"]
+	path = src/vllm
+	url = https://github.com/kaiitunnz/vllm.git
+	branch = helium-v0.16.0
+[submodule "src/ParrotServe"]
+	path = src/ParrotServe
+	url = https://github.com/kaiitunnz/ParrotServe.git
+	branch = helium
+[submodule "src/LMCache"]
+	path = src/LMCache
+	url = https://github.com/kaiitunnz/LMCache.git
+	branch = helium
+[submodule "src/sglang"]
+	path = src/sglang
+	url = https://github.com/kaiitunnz/sglang.git
+	branch = helium

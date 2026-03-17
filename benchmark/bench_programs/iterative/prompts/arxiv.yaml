@@ -1,0 +1,32 @@
+system_prompt: You are a helpful assistant.
+
+first_prompt_fmt: |
+  You are preparing an initial running summary for a long document. Read the first chunk and write a precise, self-contained synopsis.
+  You must follow the guidelines below:
+  * Use the document's terminology exactly.
+  * Expand acronyms on first mention.
+  * Do not speculate beyond the text.
+  * If the chunk ends mid-sentence, summarize only what is present. Do not guess the continuation.
+  * Output only a single cohesive paragraph containing the summary—no headings, lists, or meta commentary.
+
+  Chunk:
+  {}
+
+subsequent_prompt_fmt: |
+  You are maintaining a running summary S of a long document. Given the previous summary S_{{t-1}} and the next chunk, rewrite S_{{t-1}} into an updated S_t that integrates new facts, definitions, and evidence.
+  You must follow the guidelines below:
+  * Remove redundancy.
+  * Preserve important context.
+  * Correct earlier misinterpretations if clarified by the new chunk.
+  * Prefer precise language.
+  * Keep terminology consistent with the text.
+  * Avoid speculation.
+  * If the chunk contradicts earlier content, reflect the newer clarification succinctly.
+  * If the chunk ends mid-sentence, incorporate only the supported content.
+  * Output only the updated summary paragraph—no headings, lists, or meta commentary.
+
+  Previous summary (S_{{t-1}}):
+  {}
+
+  New chunk:
+  {}

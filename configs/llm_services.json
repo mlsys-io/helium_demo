@@ -1,0 +1,14 @@
+[
+  {
+    "name": "vllm-local",
+    "args": {
+      "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "device": "cuda:0",
+      "enable_prefix_caching": true
+    },
+    "info": {
+      "cache_capacity": 543440,
+      "prefix_caching_enabled": true
+    }
+  }
+]

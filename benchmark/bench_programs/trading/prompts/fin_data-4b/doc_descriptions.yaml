@@ -1,0 +1,9 @@
+doc_descriptions:
+  balance sheet: ", which contains quarterly financial position data including assets, liabilities, and equity over the past 2 years"
+  income statement: ", which contains quarterly revenue, expenses, and profit/loss data over the past 2 years"
+  cashflow statement: ", which contains quarterly cash inflows and outflows from operating, investing, and financing activities over the past 2 years"
+  insider sentiment: ", which contains monthly insider trading sentiment metrics including buy/sell ratios and transaction counts over the past year"
+  stock price data: ", which contains daily historical stock prices including open, high, low, close, and volume data"
+  stock stats indicators: ", which contains technical analysis indicators and statistical measures calculated from stock price movements"
+  news chunk: ", which contains recent news headlines, summaries, and sources from the past 2 weeks"
+  post chunk: ", which contains relevant social media posts from Reddit with titles, content, and engagement scores"
