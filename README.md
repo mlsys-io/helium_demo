@@ -64,7 +64,7 @@ We provide notebooks that demonstrate how to develop and run MA applications usi
 
 We’ve included several benchmarks to evaluate Helium against baseline systems. At present, the following are supported:
 
-Microbenchmark Tasks:
+### Microbenchmark Tasks
 
 - Map-Reduce QA
 - Multi-Agent Debate QA
@@ -72,11 +72,11 @@ Microbenchmark Tasks:
 - Iterative Refinement Generation
 - Parallel Chains Generation
 
-End-to-End Benchmark Tasks:
+### End-to-End Benchmark Tasks
 
 - Trading (investment recommendation)
 
-Baselines:
+### Baselines
 
 - vLLM
 - OpWise
@@ -84,6 +84,12 @@ Baselines:
 - AgentScope
 - Parrot
 - KVFlow
+
+### Additional Dataset
+
+To reproduce the paper's results for the end-to-end benchmark, we provide the trading data at this [Google Drive link](https://drive.google.com/file/d/1Kyw0ZZoj60idQBvkwXoAz2jurPw9A2eO/view?usp=sharing). Simply download and move the `fin_data.zip` file to [./benchmark/bench_utils/datasets/fin_data](./benchmark/bench_utils/datasets/fin_data). The benchmark script will preprocess the dataset automatically.
+
+### Execution
 
 To run the benchmarks, use the command below:
 
